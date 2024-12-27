@@ -13,7 +13,7 @@ public class StudyLoop4 {
 //			System.out.println();
 //			
 //		}
-		
+		//git hub test
 		for (int i = 2; i < 10; i++) {
 			
 			for (int j = 2; j < 10; j++) {
