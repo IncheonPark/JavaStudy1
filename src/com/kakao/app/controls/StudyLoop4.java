@@ -14,18 +14,40 @@ public class StudyLoop4 {
 //			
 //		}
 		//git hub test
-		for (int i = 2; i < 10; i++) {
+//		for (int i = 2; i < 10; i++) {
+//			
+//			for (int j = 2; j < 10; j++) {
+//				
+//				System.out.print(i + "x" + j + " = " + i*j + "     ");
+//				if(j == 9) {
+//					System.out.println();
+//				}
+//				
+//			}
+//			
+//		}
+		
+		for (int i=0; i<3; i++) {
 			
-			for (int j = 2; j < 10; j++) {
+			for (int j=0; j<5; j++) {
 				
-				System.out.print(i + "x" + j + " = " + i*j + "     ");
-				if(j == 9) {
-					System.out.println();
+				System.out.println(i+" : "+j);
+				
+				if(j==3) {
+					break; //가장 속해있는 반복문만 벗어남 (j for문만 벗어남)
 				}
 				
 			}
 			
 		}
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 	
