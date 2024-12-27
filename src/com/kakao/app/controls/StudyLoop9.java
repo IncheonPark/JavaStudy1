@@ -17,30 +17,27 @@ public class StudyLoop9 {
 	 * 골드 : 0 부터 시작
 	 * 레벨이 5 달성 시 1천 골드 보너스 지급
 	 * 레벨이 10 달성 시 2천 골드 보너스 지급
-	 * 레벨이 15 달성 시 3천 골드 보너스 지급
-	 * 
+	 * 레벨이 15 달성 시 3천 골드 보너스 지급 
 	 * 
 	 * */
-	
-	
 		
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		//1번 사냥, 2번 종료
-		
 		int gold = 0;
+		//-----------------------------------------------------
 		for (int i = 1; i <= 15; i++) {
 						
 			if (i > 1) {
-				System.out.println("-----------------------");
+				System.out.println("---------------------------------");
 				
 				if (i % 5 == 0) {
 					gold = gold + (i/5 * 1000);
-					System.out.println("5레벨씩 상승할 때마다 보너스 골드 지급!");
+					System.out.println("5레벨씩 상승할 때마다 보너스 골드 지급! - 지급량 : " + (i/5 * 1000) + "골드");
 				}
 				System.out.println("레벨업! 현재 레벨 : " + i + " / 현재 골드 : " + gold);
-				
+				//-----------------------------------------------------
 				if (i == 15) {
 					break;
 				}
