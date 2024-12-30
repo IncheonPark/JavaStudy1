@@ -43,7 +43,7 @@ public class ArrayStudy6 {
 		for (int i = 0; i < scoreTotal.length-1; i++) {
 			System.out.println(i);
 			
-			for(int j = i+1; j < 5; j++) {
+			for(int j = i+1; j < scoreTotal.length; j++) {
 				System.out.print(j);
 				
 				String stuTemp = students[i];
@@ -52,15 +52,24 @@ public class ArrayStudy6 {
 				int totalTemp = scoreTotal[i];
 				 
 				if(scoreTotal[i] < scoreTotal[j]) {
+					
 					scoreTotal[i] = scoreTotal[j];
 					scoreTotal[j] = totalTemp;
+					
+					scoreKor[i] = scoreKor[j];
+					scoreKor[j] = korTemp;
+					
+					scoreMath[i] = scoreMath[j];
+					scoreMath[j] = mathTemp;
+					
+					students[i] = students[j];
+					students[j] = stuTemp;
 				}
 			}
 			
 			System.out.println();
 			
 		}
-		
 		
 		
 		//-----------------------------------------------

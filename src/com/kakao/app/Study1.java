@@ -9,7 +9,7 @@ public class Study1 {
 		System.out.println(333);
 		System.out.println("전화번호");
 		System.out.println("01074770323");
-		System.out.println(01074770323); //앞에 0을 붙이면 8진수로 바뀜. 버그 주의
+		System.out.println(01074770323); //앞에 0을 붙이면 8진수로 바뀜. 의도치 않은 결과 주의할 것
 		
 	}
 	

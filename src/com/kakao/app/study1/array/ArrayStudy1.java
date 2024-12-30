@@ -10,7 +10,7 @@ public class ArrayStudy1 {
 		//모든 레퍼런스 타입의 메모리 크기는 4바이트
 		//new 키워드는 Heap(실제 데이터가 있는 곳)에 만든다는 얘기
 		
-		int [] nums = new int [3]; 
+		int [] nums = new int [3];
 		//Heap에다가 int타입을 3개 연속으로 만드세요, nums(Stack 내 main에 위치, 즉 지역변수)에는 생성된 메모리의 첫번째 주소를 저장
 		nums [0] = 20;
 		
@@ -25,9 +25,9 @@ public class ArrayStudy1 {
 		
 		//-----------------------------------------------
 		String [] mans = new String[3];
-		mans[0] = "박동우";
-		mans[1] = "김초롱";
-		mans[2] = "이민열";
+		mans[0] = "가나";
+		mans[1] = "다라";
+		mans[2] = "마바";
 		
 		for (int i = 0; i < 3; i++) {
 			System.out.println(mans[i]);

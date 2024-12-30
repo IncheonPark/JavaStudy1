@@ -2,7 +2,7 @@ package com.kakao.app.controls;
 
 import java.util.Scanner;
 
-public class StudyContorl2 {
+public class StudyControl2 {
 
 	/*  if ~ else 둘 중 하나를 선택 하는 조건문
 	 * if (조건식) {
