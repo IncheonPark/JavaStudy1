@@ -78,6 +78,8 @@ public class StudyLoop8 {
 				}
 																							
 				} System.out.println("게임을 종료합니다.");
+				//LOL
+				
 		}
 			
 		
