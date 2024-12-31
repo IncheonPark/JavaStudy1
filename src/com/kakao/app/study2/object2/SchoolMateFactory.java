@@ -51,13 +51,13 @@ public class SchoolMateFactory {
 		
 		for (int i = 0; i < mates.length; i++) {
 			
-			if(mates[i].num == checkNum) {								
+			if(mates[i].num == checkNum) {
 				mate = mates[i];
 				break;
 				
 			}
 			
-		}
+		} //mate가 null인 상태로 학생을 못 찾고 for문이 끝날 수 있다. > Controller에 필터링용 if문 한개 만들어뒀음.
 		
 		return mate;
 		
