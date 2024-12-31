@@ -7,15 +7,15 @@ public class SchoolMateView {
 	
 	public void view (SchoolMate mate) {
 		
-//		System.out.println("이름\t번호\t국어\t영어\t수학\t총점\t평균");
-//		System.out.print(mate.name+"\t");
-//		System.out.print(mate.num+"\t");
-//		System.out.print(mate.kor+"\t");
-//		System.out.print(mate.eng+"\t");
-//		System.out.print(mate.math+"\t");
-//		System.out.print(mate.total+"\t");
-//		System.out.println(mate.avg);
-//		System.out.println("-----------------------------------------");
+		System.out.println("이름\t번호\t국어\t영어\t수학\t총점\t평균");
+		System.out.print(mate.name+"\t");
+		System.out.print(mate.num+"\t");
+		System.out.print(mate.kor+"\t");
+		System.out.print(mate.eng+"\t");
+		System.out.print(mate.math+"\t");
+		System.out.print(mate.total+"\t");
+		System.out.println(mate.avg);
+		System.out.println("-----------------------------------------");
 		
 	}
 	

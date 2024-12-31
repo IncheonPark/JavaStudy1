@@ -40,7 +40,29 @@ public class SchoolMateFactory {
 		return mates; //최종 처리된 배열을 리턴
 		
 		
+	}
+	
+	//2. 검색 기능 만들기-------------------------------------------
+	public SchoolMate find(SchoolMate[] mates) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("학생 번호 입력");		
+		int checkNum = sc.nextInt();
+		SchoolMate mate = null;
+		
+		for (int i = 0; i < mates.length; i++) {
+			
+			if(mates[i].num == checkNum) {								
+				mate = mates[i];
+				break;
+				
+			}
+			
+		}
+		
+		return mate;
 		
 	}
+	
+	
 	
 }

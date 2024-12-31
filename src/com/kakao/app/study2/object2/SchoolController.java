@@ -17,7 +17,8 @@ public class SchoolController {
 		while(flag) {
 			System.out.println("=================================================");
 			System.out.println("메뉴 선택을 해주세요.");
-			System.out.println("1. 학생 정보 입력 / 2. 학생 정보 출력 / 3. 프로그램 종료");
+			System.out.println("1. 학생 정보 입력 / 2. 학생 정보 출력 / 3. 특정 학생 찾기 (번호 입력) / 4. 프로그램 종료");
+			// 여유가 되면 4번 메뉴 특정 학생 삭제 (학생 삭제 및 배열칸 1개 줄이기 만들어볼 것)
 			
 			switch (sc.nextInt()) {
 			
@@ -28,6 +29,14 @@ public class SchoolController {
 			case 2 : 
 				view.viewAll(mates);
 				break;
+			
+			case 3 :
+				 mate = factory.find(mates);
+				 if (mate != null) {
+					 view.view(mate);					 
+				 } else {
+					 System.out.println("일치하는 학생이 없습니다.");
+				 }
 				
 			default : System.out.println("프로그램을 종료합니다.");
 				flag = !flag;
