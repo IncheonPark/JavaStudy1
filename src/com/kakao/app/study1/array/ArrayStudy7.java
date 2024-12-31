@@ -33,7 +33,7 @@ public class ArrayStudy7 {
 		ars[0] = new int [3];
 		ars[1] = new int [2];
 		
-		
+		// test branch에서 작업한 내용입니다.
 	}
 	
 }
