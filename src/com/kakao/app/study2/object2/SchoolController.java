@@ -12,12 +12,14 @@ public class SchoolController {
 		SchoolMate mate = new SchoolMate();
 		SchoolMateFactory factory = new SchoolMateFactory();				
 		SchoolMateView view = new SchoolMateView();
+		SchoolMateDelete delete = new SchoolMateDelete();
 		SchoolMate[] mates = new SchoolMate[0];
 		
 		while(flag) {
 			System.out.println("=================================================");
 			System.out.println("메뉴 선택을 해주세요.");
-			System.out.println("1. 학생 정보 입력 / 2. 학생 정보 출력 / 3. 특정 학생 찾기 (번호 입력) / 4. 프로그램 종료");
+			System.out.println("1. 학생 정보 입력 / 2. 학생 정보 출력 / 3. 특정 학생 찾기 (번호 입력) / "
+					+ "4. 특정 학생 삭제 (번호 입력) / 5. 프로그램 종료");
 			// 여유가 되면 4번 메뉴 특정 학생 삭제 (학생 삭제 및 배열칸 1개 줄이기 만들어볼 것)
 			// 특정 번호의 학생을 찾고, 그 칸의 번호(num)를 음수로 바꾼다 > 배열 중 제일 작은 수가 될 것이다 > 배열을 오름차순으로 정렬
 			// > 새로운 배열(한칸 적은 배열)을 만들어서 이전 배열의 요소들을 대입
@@ -41,7 +43,18 @@ public class SchoolController {
 				 } else {
 					 System.out.println("일치하는 학생이 없습니다.");
 				 }
-				 break;
+				break;
+				 
+			case 4 : 
+				mate = factory.find(mates);
+			
+				if (mate != null) {
+					mates = delete.delete(mates, mate); 
+					//mates배열에 학생을 지우고 난 배열을 새로 넣어준다.
+				} else {
+					 System.out.println("일치하는 학생이 없습니다.");
+				}
+				break;
 				
 			default : System.out.println("프로그램을 종료합니다.");
 				flag = !flag;
