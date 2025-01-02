@@ -28,9 +28,9 @@ public class GameControl {
 		
 		character.setSword(sword); //캐릭터가 소드를 습득함
 		
-		character.getSword().info();
-		
-		character.getPet().info();
+//		character.getSword().info();
+//		
+//		character.getPet().info();
 		
 		//character = null; 해버리면 pet도 같이 찾을 수 없게 됨, 하지만 sword는 컨트롤러에 선언되어 있어 찾을 수 있음.
 		//내부 선언과 setter의 차이
