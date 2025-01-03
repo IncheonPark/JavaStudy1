@@ -1,72 +1,32 @@
 package com.kakao.app.students;
 
-public class MiddleStudent {
+public class MiddleStudent extends Student {	
 	
-	private String name;
-	private int num;
-	private int kor;
-	private int eng;
-	private int math;
 	private int history; //역사 과목 한개 추가
-	private int total;
-	private double avg;
+	
+	public MiddleStudent() {
+		super(); //아무것도 안 적은 경우에는 기본적으로 디폴트로 선언되어 있다.
+		
+		super.setName("winter");
+		System.out.println(super.getName());
+		
+		this.setName("IU");
+		System.out.println(this.getName());
+		
+		System.out.println(super.getName()); //IU로 나온다. 이 경우는 super와 this가 같은 변수(주소)를 가리키기 때문 
+	}
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getNum() {
-		return num;
-	}
-	public void setNum(int num) {
-		this.num = num;
-	}
-	public int getKor() {
-		return kor;
-	}
-	public void setKor(int kor) {
-		this.kor = kor;
-	}
-	public int getEng() {
-		return eng;
-	}
-	public void setEng(int eng) {
-		this.eng = eng;
-	}
-	public int getMath() {
-		return math;
-	}
-	public void setMath(int math) {
-		this.math = math;
-	}
 	public int getHistory() {
 		return history;
 	}
+	
 	public void setHistory(int history) {
 		this.history = history;
 	}
-	public int getTotal() {
-		return total;
-	}
-	public void setTotal(int total) {
-		this.total = total;
-	}
-	public double getAvg() {
-		return avg;
-	}
-	public void setAvg(double avg) {
-		this.avg = avg;
-	}
+	
+	
 	
 	
 
